@@ -1,0 +1,5 @@
+#ignore obj and lib file
+dist
+rev
+node_modules
+.tags
