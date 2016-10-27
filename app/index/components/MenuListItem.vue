@@ -1,11 +1,11 @@
 <template lang="html">
   <!-- {{listitem}} -->
-  <div class="ui card raised" >
-    <div class="image">
+  <div class="ui card raised">
+  <div class="image">
       <img v-bind:src="'http://tnfs.tngou.net/image' + item.img + '_320x240'">
     </div>
     <div class="content">
-      <a class="header">{{item.name}}</a>
+      <a class="header">{{item.name}} id: {{item.id}}</a>
       <div class="meta">
         <span class="date">{{item.food}}</span>
       </div>
@@ -23,6 +23,8 @@
 </template>
 
 <script>
+import CONFIG from '../../../config.js'
+
 export default {
   data () {
     return {
@@ -30,10 +32,12 @@ export default {
   },
   props: ['item'],
   computed: {},
-  methods: {},
+  methods: {
+  },
   components: {}
 }
 </script>
 
 <style lang="css">
+
 </style>
