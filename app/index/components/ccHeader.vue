@@ -1,12 +1,12 @@
 <template lang="html">
-  <h1>{{title}}</h1>
+  <h1 class="ui header">{{title}}</h1>
 </template>
 
 <script>
 export default {
   data () {
     return {
-      title: 'Todo test'
+      title: '天狗菜谱'
     }
   },
   computed: {},

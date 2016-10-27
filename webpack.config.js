@@ -24,7 +24,7 @@ module.exports = {
                 exclude: /node_modules/,
                 query: {
                     presets: ['es2015', 'stage-0']
-                }，
+                },
                 plugins: ['transform-runtime']
             },
             {
@@ -37,9 +37,9 @@ module.exports = {
             },
             {
             　　test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/,
-
             　　loader: 'url-loader?importLoaders=1&limit=1000&name=/fonts/[name].[ext]'
             },
+            { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'} 
         ]
     },
 

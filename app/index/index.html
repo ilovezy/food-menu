@@ -4,11 +4,17 @@
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
 		<meta charset="utf-8">
 		<title>首页</title>
+		<link rel="stylesheet" href="../../node_modules/semantic-ui/dist/semantic.min.css">
 	</head>
 	<body>
 		<!-- vue的组件以自定义标签的形式使用 -->
-		<div id="app" class="container">
-			<Favlist></Favlist>
+		<br>
+		<div id="app" class="ui container">
+			<cc-header></cc-header>
+			<menu-list-container></menu-list-container>
+			<cc-footer></cc-footer>
 		</div>
+
+		<script src="../../node_modules/vue/dist/vue.js"></script>
 	</body>
 </html>

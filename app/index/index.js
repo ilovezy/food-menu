@@ -1,22 +1,10 @@
-import Vue from 'vue'
-import Favlist from './components/Favlist.vue'
-import '../../node_modules/.3.3.7@bootstrap/dist/css/bootstrap.min.css'
+// import Vue from 'vue'
+import MenuListContainer from './components/MenuListContainer'
+import ccHeader from './components/ccHeader'
+import ccFooter from './components/ccFooter'
 
-/**
- * 天狗健康菜谱
- * http://apistore.baidu.com/apiworks/servicedetail/987.html
- */
-const COOK_URL = 'http://apis.baidu.com/tngou/cook/name?name=%E5%AE%AB%E4%BF%9D%E9%B8%A1%E4%B8%81'
- var headers = {"apikey": "5292d6abaf0ec95c2b7924551e50668f"};
-$.ajax({
-  method: 'GET',
-  headers: headers,
-  dataType: 'json',
-  url: COOK_URL,
-  success: function(data){
-    console.log('!!!!', data)
-  }
-})
+// import '../../node_modules/.3.3.7@bootstrap/dist/css/bootstrap.min.css'
+// import '../../node_modules/semantic-ui/dist/semantic.min.css'
 
 new Vue({
   el: '#app',
@@ -24,6 +12,6 @@ new Vue({
     msg: 'hello dfsafdsaindex'
   },
   components: {
-    Favlist
+    MenuListContainer, ccHeader, ccFooter
   }
 })
